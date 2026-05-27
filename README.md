@@ -22,7 +22,7 @@ Este projeto é um currículo profissional online desenvolvido como Trabalho Pr�
 
 ## 🚀 Instruções de Execução
 1. *Front-end:* Basta clonar o repositório e abrir o arquivo index.html em qualquer navegador moderno.
-2. *Back-end (PHP):* Para testar o envio do formulário, é necessário um servidor local (como o XAMPP ou WAMP). Coloque a pasta do projeto no diretório apropriado (ex: htdocs no XAMPP).
+2. *Back-end (PHP):* Para testar o envio do formulário, é necessário um servidor local (como o XAMPP ou WAMP). 
 
 ## ✨ Funcionalidades Implementadas
 * *Página Responsiva:* Adaptável para desktops e dispositivos móveis.
