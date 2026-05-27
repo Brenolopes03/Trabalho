@@ -18,3 +18,13 @@ Este projeto é um currículo profissional online desenvolvido como Trabalho Pr�
  ├── contato.php    # Processamento de formulário (Back-end)
  ├── /img           # Imagens de perfil e assets
  └── README.md      # Instruções do projeto
+
+
+## 🚀 Instruções de Execução
+1. *Front-end:* Basta clonar o repositório e abrir o arquivo index.html em qualquer navegador moderno.
+2. *Back-end (PHP):* Para testar o envio do formulário, é necessário um servidor local (como o XAMPP ou WAMP). Coloque a pasta do projeto no diretório apropriado (ex: htdocs no XAMPP).
+
+## ✨ Funcionalidades Implementadas
+* *Página Responsiva:* Adaptável para desktops e dispositivos móveis.
+* *Menu de Navegação:* Rolagem suave para as seções (Smooth Scroll).
+* *Formulário de Contato:* Validação dupla (JavaScript no cliente e PHP no servidor).
