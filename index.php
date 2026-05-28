@@ -4,7 +4,7 @@ $cargo = "Desenvolvedor | Estudante de Tecnologia";
 $telefone = "+55 33 9991-0274";
 $email = "breninclb@gmail.com";
 $github = "https://github.com/Brenolopes03/Trabalho";
-$linkedin = "linkedin.com/in/seuusuario"; // ALTERA AQUI
+$linkedin = "https://www.linkedin.com/in/breno-lopes-bb6409412?trk=contact-info";
 $foto = "profile (4).png";
 $localizacao = "Brasil";
 
