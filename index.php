@@ -5,7 +5,7 @@ $telefone = "+55 33 9991-0274";
 $email = "breninclb@gmail.com";
 $github = "https://github.com/Brenolopes03/Trabalho";
 $linkedin = "linkedin.com/in/seuusuario"; // ALTERA AQUI
-$foto = "img/perfil.jpg";
+$foto = "profile (4).png";
 $localizacao = "Brasil";
 
 $sobre = "Olá! Meu nome é Breno e estou construindo minha trajetória na área de tecnologia.<br><br>
