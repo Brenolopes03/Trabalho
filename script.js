@@ -1,4 +1,3 @@
-
 const trilho = document.getElementById('trilho');
 const body = document.body; // Mais direto!
 const icone = document.getElementById('icone');
