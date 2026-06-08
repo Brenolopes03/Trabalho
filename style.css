@@ -1,41 +1,96 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: #f5f5f5;
+    transition: background 0.3s, color 0.3s; /* Transição suave ao mudar de tema */
 }
 
 .container {
     display: flex;
     max-width: 1000px;
-    margin: auto;
+    margin: 40px auto; /* Adicionado margem acima/abaixo para não colar no topo */
     background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: background 0.3s;
 }
 
+/* Lado Esquerdo (Fixo Escuro por padrão de design) */
 .left_side {
     width: 35%;
     background: #003147;
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
-.right_side {
-    width: 65%;
-    padding: 20px;
+/* Nova estilização para a foto de perfil e cabeçalho esquerdo */
+.profile-container {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.profile_text img {
-    width: 120px;
-    border-radius: 50%;
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover; /* Não deforma a imagem */
+    border-radius: 50%; /* Foto redonda */
+    border: 3px solid #03a9f4; /* Borda estilizada combinando com as barras */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.profile-container h2 {
+    margin: 15px 0 5px;
+    font-size: 24px;
+}
+
+.subtitle {
+    color: #03a9f4;
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Estilização das Listas de Contato e Idiomas */
+.contact_info {
+    margin-bottom: 25px;
+}
+
+.contact_info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.contact_info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.contact_info ul li i {
+    color: #03a9f4;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 20px; /* Alinha os ícones verticalmente */
+    text-align: center;
 }
 
 .title {
     margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    padding-bottom: 5px;
 }
 
+/* Barras de Percentual (Habilidades e Idiomas) */
 .percent {
     background: #ddd;
     height: 6px;
     margin-top: 5px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .percent div {
@@ -43,8 +98,45 @@ body {
     height: 100%;
 }
 
+/* Lado Direito */
+.right_side {
+    width: 65%;
+    padding: 30px;
+    background: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #003147;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.title2:first-of-type {
+    margin-top: 0; /* Remove margem do primeiro título ("Sobre") */
+}
+
 .box {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.year_company {
+    min-width: 150px;
+    margin-bottom: 5px;
+}
+
+.year_company h5 {
+    margin: 0;
+    color: #03a9f4;
+}
+
+/* Switch do Modo Escuro (Trilho) */
+.light-dark-mode {
+    display: flex;
+    justify-content: flex-end; /* Joga o botão para o canto superior direito */
 }
 
 .trilho {
@@ -53,13 +145,52 @@ body {
     background: #ccc;
     border-radius: 20px;
     cursor: pointer;
+    position: relative;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.indicador {
+    width: 21px;
+    height: 21px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
 }
 
 .trilho.dark {
-    background: #333;
+    background: #03a9f4;
 }
 
+.trilho.dark .indicador {
+    transform: translateX(25px);
+}
+
+/* REGRAS PARA O MODO ESCURO (DARK MODE) */
 body.dark {
     background: #121212;
-    color: white;
+    color: #e0e0e0;
 }
+
+body.dark .container {
+    background: #1e1e1e;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+body.dark .right_side {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark .title2 {
+    color: #03a9f4;
+    border-bottom-color: #03a9f4;
+}
+
+body.dark .percent {
+    background: #444; /* Barra cinza mais escura no modo dark */
+}
+
