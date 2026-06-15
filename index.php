@@ -1,6 +1,7 @@
 <?php
 $nome = "Breno";
 $foto = "perfil.png";
+$email = "breninclb@gmail.com";
 
 $sobre = "Oie! Meu nome é Breno e estou construindo minha trajetória na área de tecnologia.
 
