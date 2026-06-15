@@ -29,8 +29,8 @@ body {
 }
 
 .profile-pic {
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 100px;
     object-fit: cover; /* Não deforma a imagem */
     border-radius: 20%; /* Foto redonda */
     border: 3px solid #03a9f4; /* Borda estilizada combinando com as barras */
