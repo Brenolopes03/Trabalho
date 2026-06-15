@@ -2,6 +2,7 @@
 $nome = "Breno";
 $foto = "perfil.png";
 $email = "breninclb@gmail.com";
+$telefone = "(33) 99991-0274";
 
 $sobre = "Oie! Meu nome é Breno e estou construindo minha trajetória na área de tecnologia.
 
