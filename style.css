@@ -28,7 +28,7 @@ body {
     margin-bottom: 30px;
 }
 
-.profile-pic {
+.perfil-png {
     width: 20px;
     height: 20px;
     object-fit: cover; /* Não deforma a imagem */
